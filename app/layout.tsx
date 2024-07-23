@@ -2,11 +2,17 @@ import { Inter as FontSans } from "next/font/google"
 
 import { cn } from "@/lib/utils"
 import './globals.css'
+import { Metadata } from "next"
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+
+export const metadata: Metadata = {
+  title: "Saral Docs",
+  description: "A simple online collaborative document tool. ",
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
